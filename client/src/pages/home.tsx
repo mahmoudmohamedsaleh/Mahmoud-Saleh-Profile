@@ -511,8 +511,11 @@ export default function Home() {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6" data-testid="text-about-summary">
                 Technical professional with 7+ years mastering the complete product lifecycle: from Electronics Design and Software Development, through SMT Manufacturing at Samsung Electronics, to Presales Engineering for Low Current System Solutions across the Middle East.
               </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                As Presale Manager, I supervise the design of comprehensive Low Current System solutions including: ICT Infrastructure, IP-CCTV, Audio Visual, Access Control, Lighting Control, Fire Alarm Systems, Public Address, Nurse Call, PRMS, GRMS, BMS, and Parking Guidance Systems.
+              </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I bring a rare end-to-end perspective, understanding how products are designed, manufactured, and sold. This enables me to deliver tailored security, networking, and infrastructure solutions that align technical excellence with business value, driving successful project outcomes and lasting client partnerships.
+                I bring a rare end-to-end perspective, understanding how products are designed, manufactured, and sold. This enables me to deliver tailored solutions that align technical excellence with business value, driving successful project outcomes and lasting client partnerships.
               </p>
             </Card>
           </div>
