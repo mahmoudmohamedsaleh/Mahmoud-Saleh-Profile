@@ -507,75 +507,43 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">About Me</Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Professional Summary</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Professional Summary</h2>
             </div>
-            
-            <div className="grid lg:grid-cols-3 gap-8">
-              <div className="lg:col-span-2">
-                <Card className="p-8 h-full">
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6" data-testid="text-about-summary">
-                    Technical professional with 7+ years mastering the complete product lifecycle: from Electronics Design and Software Development, through SMT Manufacturing at Samsung Electronics, to Presales Engineering for Low Current System Solutions across the Middle East.
-                  </p>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-xs font-semibold text-foreground uppercase tracking-widest mb-4 flex items-center gap-2">
-                      <span className="w-8 h-px bg-primary" />
-                      Low Current System Solutions I Supervise
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {[
-                        "ICT Infrastructure",
-                        "IP-CCTV",
-                        "Audio Visual",
-                        "Access Control",
-                        "Lighting Control",
-                        "Fire Alarm Systems",
-                        "Public Address",
-                        "Nurse Call",
-                        "PRMS",
-                        "GRMS",
-                        "BMS",
-                        "Parking Guidance"
-                      ].map((system) => (
-                        <Badge key={system} variant="secondary" className="text-sm py-1.5 px-3">
-                          {system}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    I bring a rare end-to-end perspective, understanding how products are designed, manufactured, and sold. This enables me to deliver tailored solutions that align technical excellence with business value.
-                  </p>
-                </Card>
-              </div>
+            <Card className="p-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8" data-testid="text-about-summary">
+                Technical professional with 7+ years mastering the complete product lifecycle: from Electronics Design and Software Development, through SMT Manufacturing at Samsung Electronics, to Presales Engineering for Low Current System Solutions across the Middle East.
+              </p>
               
-              <div className="space-y-4">
-                <Card className="p-6 text-center">
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <Target className="h-7 w-7 text-primary" />
-                  </div>
-                  <div className="text-3xl font-bold text-foreground">100%</div>
-                  <div className="text-sm text-muted-foreground">Project Success Rate</div>
-                </Card>
-                
-                <Card className="p-6 text-center">
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <TrendingUp className="h-7 w-7 text-primary" />
-                  </div>
-                  <div className="text-3xl font-bold text-foreground">12+</div>
-                  <div className="text-sm text-muted-foreground">System Categories</div>
-                </Card>
-                
-                <Card className="p-6 text-center">
-                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <Globe className="h-7 w-7 text-primary" />
-                  </div>
-                  <div className="text-3xl font-bold text-foreground">GCC</div>
-                  <div className="text-sm text-muted-foreground">Regional Expertise</div>
-                </Card>
+              <div className="mb-8">
+                <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
+                  As Presale Manager, I Supervise Low Current System Solutions
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "ICT Infrastructure",
+                    "IP-CCTV",
+                    "Audio Visual",
+                    "Access Control",
+                    "Lighting Control",
+                    "Fire Alarm Systems",
+                    "Public Address",
+                    "Nurse Call",
+                    "PRMS",
+                    "GRMS",
+                    "BMS",
+                    "Parking Guidance"
+                  ].map((system) => (
+                    <Badge key={system} variant="secondary" className="text-sm py-1.5 px-3">
+                      {system}
+                    </Badge>
+                  ))}
+                </div>
               </div>
-            </div>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I bring a rare end-to-end perspective, understanding how products are designed, manufactured, and sold. This enables me to deliver tailored solutions that align technical excellence with business value, driving successful project outcomes and lasting client partnerships.
+              </p>
+            </Card>
           </div>
         </section>
 
