@@ -508,12 +508,36 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold">Professional Summary</h2>
             </div>
             <Card className="p-8">
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6" data-testid="text-about-summary">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8" data-testid="text-about-summary">
                 Technical professional with 7+ years mastering the complete product lifecycle: from Electronics Design and Software Development, through SMT Manufacturing at Samsung Electronics, to Presales Engineering for Low Current System Solutions across the Middle East.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                As Presale Manager, I supervise the design of comprehensive Low Current System solutions including: ICT Infrastructure, IP-CCTV, Audio Visual, Access Control, Lighting Control, Fire Alarm Systems, Public Address, Nurse Call, PRMS, GRMS, BMS, and Parking Guidance Systems.
-              </p>
+              
+              <div className="mb-8">
+                <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
+                  As Presale Manager, I Supervise Low Current System Solutions
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "ICT Infrastructure",
+                    "IP-CCTV",
+                    "Audio Visual",
+                    "Access Control",
+                    "Lighting Control",
+                    "Fire Alarm Systems",
+                    "Public Address",
+                    "Nurse Call",
+                    "PRMS",
+                    "GRMS",
+                    "BMS",
+                    "Parking Guidance"
+                  ].map((system) => (
+                    <Badge key={system} variant="secondary" className="text-sm py-1.5 px-3">
+                      {system}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I bring a rare end-to-end perspective, understanding how products are designed, manufactured, and sold. This enables me to deliver tailored solutions that align technical excellence with business value, driving successful project outcomes and lasting client partnerships.
               </p>
