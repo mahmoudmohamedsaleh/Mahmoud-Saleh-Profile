@@ -509,13 +509,16 @@ export default function Home() {
             </div>
             <Card className="p-8">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6" data-testid="text-about-summary">
-                Results-driven Presales Manager with 7+ years of expertise in Low Current Systems, IT Infrastructure, and Security Solutions across the Middle East. Proven track record of winning high-value contracts through compelling technical proposals, strategic client consultations, and seamless collaboration between sales and engineering teams.
+                Versatile technical professional with 7+ years of comprehensive experience spanning the complete product lifecycle, from Electronics Design and Manufacturing to Presales Engineering and Solution Delivery. My unique background bridges hardware development, production processes, and client-facing technical sales across the Middle East.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I specialize in translating complex technical requirements into business value propositions that resonate with decision-makers. From CCTV and access control systems to structured cabling and network infrastructure, I deliver comprehensive solutions that address client pain points while maximizing ROI.
+                Beginning my career in Electronics Design and Software Development, I gained hands-on expertise in embedded systems, circuit design, and firmware programming. At Samsung Electronics, I advanced my knowledge in SMT Manufacturing Processes, mastering production line optimization, quality control, and industrial automation, understanding exactly how products move from design to production.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Transitioning to Presales Engineering, I now leverage this deep technical foundation to design and deliver Low Current System Solutions, including CCTV, access control, network infrastructure, and security systems. I translate complex technical requirements into compelling business propositions, guiding clients from initial consultation through solution design, proposal development, and successful project delivery.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My expertise spans end-to-end project lifecycle management: conducting site surveys, developing technical specifications, preparing competitive bids, leading product demonstrations, and ensuring successful project handovers. Committed to building long-term partnerships through technical excellence, innovation, and exceptional customer satisfaction.
+                This end-to-end perspective, from creating the product to selling it, enables me to understand both the technical intricacies and commercial value of every solution I present. Committed to excellence, innovation, and building long-term partnerships through exceptional customer satisfaction.
               </p>
             </Card>
           </div>
