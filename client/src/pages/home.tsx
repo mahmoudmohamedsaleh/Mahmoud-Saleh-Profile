@@ -509,10 +509,13 @@ export default function Home() {
             </div>
             <Card className="p-8">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6" data-testid="text-about-summary">
-                Seeking a challenging position of Electrical Engineer where I can apply and enhance my academic background, skills, and career through working in a creative and productive development team that aims to meet the company's and customer's requirements and satisfaction.
+                Results-driven Presales Manager with 7+ years of expertise in Low Current Systems, IT Infrastructure, and Security Solutions across the Middle East. Proven track record of winning high-value contracts through compelling technical proposals, strategic client consultations, and seamless collaboration between sales and engineering teams.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                I specialize in translating complex technical requirements into business value propositions that resonate with decision-makers. From CCTV and access control systems to structured cabling and network infrastructure, I deliver comprehensive solutions that address client pain points while maximizing ROI.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                With expertise spanning telecommunications, information technology, security systems, and intelligent surveillance, I deliver end-to-end solutions from design and implementation to maintenance and support. My commitment to quality, innovation, and customer satisfaction has earned recognition as a preferred technology partner in the region.
+                My expertise spans end-to-end project lifecycle management: conducting site surveys, developing technical specifications, preparing competitive bids, leading product demonstrations, and ensuring successful project handovers. Committed to building long-term partnerships through technical excellence, innovation, and exceptional customer satisfaction.
               </p>
             </Card>
           </div>
