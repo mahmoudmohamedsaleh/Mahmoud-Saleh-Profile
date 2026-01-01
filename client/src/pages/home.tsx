@@ -502,7 +502,7 @@ export default function Home() {
         </section>
 
         <section id="about" className="py-16 md:py-24 scroll-mt-20">
-          <div className="max-w-4xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">About Me</Badge>
               <h2 className="text-3xl md:text-4xl font-bold">Professional Summary</h2>
@@ -546,7 +546,7 @@ export default function Home() {
         </section>
 
         <section id="experience" className="py-16 md:py-24 bg-muted/30 scroll-mt-20">
-          <div className="max-w-4xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">Career Journey</Badge>
               <h2 className="text-3xl md:text-4xl font-bold">Work Experience</h2>
@@ -566,7 +566,7 @@ export default function Home() {
         </section>
 
         <section id="skills" className="py-16 md:py-24 scroll-mt-20">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">Expertise</Badge>
               <h2 className="text-3xl md:text-4xl font-bold">Technical Skills</h2>
@@ -580,7 +580,7 @@ export default function Home() {
         </section>
 
         <section id="projects" className="py-16 md:py-24 bg-muted/30 scroll-mt-20">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">Portfolio</Badge>
               <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
@@ -597,7 +597,7 @@ export default function Home() {
         </section>
 
         <section id="education" className="py-16 md:py-24 scroll-mt-20">
-          <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">Academic Background</Badge>
               <h2 className="text-3xl md:text-4xl font-bold">Education & Certifications</h2>
@@ -682,7 +682,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className="py-16 md:py-24 bg-muted/30 scroll-mt-20">
-          <div className="max-w-4xl mx-auto px-4">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">Get in Touch</Badge>
               <h2 className="text-3xl md:text-4xl font-bold">Contact Information</h2>
