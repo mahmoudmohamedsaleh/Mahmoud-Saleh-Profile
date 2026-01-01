@@ -38,6 +38,20 @@ const experiences = [
     company: "Eshraq Al-Jazeera Technology Co.",
     period: "Mar 2025 - Present",
     location: "Riyadh, Saudi Arabia",
+    systems: [
+      "ICT Infrastructure",
+      "IP-CCTV",
+      "Audio Visual",
+      "Access Control",
+      "Lighting Control",
+      "Fire Alarm Systems",
+      "Public Address",
+      "Nurse Call",
+      "PRMS",
+      "GRMS",
+      "BMS",
+      "Parking Guidance"
+    ],
     highlights: [
       "Lead design, pricing, and technical strategy for large-scale Infrastructure Networking projects",
       "Oversee preparation of detailed engineering drawings and technical specifications",
@@ -296,6 +310,19 @@ function ExperienceCard({ experience, isExpanded, onToggle, isLast }: {
           </div>
         </CardHeader>
         <CardContent>
+          {experience.systems && (
+            <div className="mb-4 pb-4 border-b">
+              <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-3">Systems I Supervise</h4>
+              <div className="flex flex-wrap gap-2">
+                {experience.systems.map((system, idx) => (
+                  <Badge key={idx} variant="secondary" className="text-xs py-1 px-2">
+                    {system}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          )}
+          
           <ul className="space-y-2">
             {experience.highlights.map((highlight, idx) => (
               <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
