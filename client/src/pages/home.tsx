@@ -509,16 +509,10 @@ export default function Home() {
             </div>
             <Card className="p-8">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6" data-testid="text-about-summary">
-                Versatile technical professional with 7+ years of comprehensive experience spanning the complete product lifecycle, from Electronics Design and Manufacturing to Presales Engineering and Solution Delivery. My unique background bridges hardware development, production processes, and client-facing technical sales across the Middle East.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Beginning my career in Electronics Design and Software Development, I gained hands-on expertise in embedded systems, circuit design, and firmware programming. At Samsung Electronics, I advanced my knowledge in SMT Manufacturing Processes, mastering production line optimization, quality control, and industrial automation, understanding exactly how products move from design to production.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Transitioning to Presales Engineering, I now leverage this deep technical foundation to design and deliver Low Current System Solutions, including CCTV, access control, network infrastructure, and security systems. I translate complex technical requirements into compelling business propositions, guiding clients from initial consultation through solution design, proposal development, and successful project delivery.
+                Technical professional with 7+ years mastering the complete product lifecycle: from Electronics Design and Software Development, through SMT Manufacturing at Samsung Electronics, to Presales Engineering for Low Current System Solutions across the Middle East.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                This end-to-end perspective, from creating the product to selling it, enables me to understand both the technical intricacies and commercial value of every solution I present. Committed to excellence, innovation, and building long-term partnerships through exceptional customer satisfaction.
+                I bring a rare end-to-end perspective, understanding how products are designed, manufactured, and sold. This enables me to deliver tailored security, networking, and infrastructure solutions that align technical excellence with business value, driving successful project outcomes and lasting client partnerships.
               </p>
             </Card>
           </div>
