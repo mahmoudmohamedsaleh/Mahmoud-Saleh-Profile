@@ -66,7 +66,6 @@ const experiences = [
       "Multidisciplinary Coordination: Act as the primary technical bridge between different engineering disciplines to ensure seamless integration and project alignment with client requirements.",
       "Implementation Support: Provide comprehensive technical support and guidance to Implementation Teams and Project Managers throughout all project phases, ensuring successful system deployment.",
       "Team Leadership: Direct and mentor a dedicated team of supervisors and technicians, ensuring high-quality installation, configuration, and adherence to project timelines.",
-      "Quality Assurance: Monitor ongoing installations and maintenance schedules to provide proactive system monitoring and resolve potential issues before they impact project delivery.",
     ],
   },
   {
