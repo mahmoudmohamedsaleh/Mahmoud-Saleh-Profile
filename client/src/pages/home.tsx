@@ -60,6 +60,7 @@ const experiences = [
       "Guide Sales Team with project details and vendor recommendations through client visits to close deals with best margin",
       "Support Procurement Team to understand purchase orders and secure best vendor pricing through supplier negotiations",
       "Designed a software tool to minimize Passive and Fiber Solution design time, enabling the team to create BOQs within 5 minutes",
+      "Designed an IP-CCTV software tool to select suitable cameras and vendors based on client specs, vendor list, and target price",
     ],
     fullDescription: [
       "End-to-End Project Leadership: Lead the design, pricing, and technical strategy for large-scale Infrastructure Networking and Light Current projects from initial concept to final delivery.",
