@@ -57,7 +57,6 @@ const experiences = [
       "Oversee preparation of detailed engineering drawings and technical specifications",
       "Direct and mentor a team of supervisors and technicians",
       "Provide technical support to Implementation Teams and Project Managers across all supervised systems",
-      "Ensure 100% system uptime through expert troubleshooting protocols",
     ],
     fullDescription: [
       "End-to-End Project Leadership: Lead the design, pricing, and technical strategy for large-scale Infrastructure Networking and Light Current projects from initial concept to final delivery.",
