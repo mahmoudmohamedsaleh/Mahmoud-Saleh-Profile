@@ -469,21 +469,6 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto px-4 py-16 md:py-24">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <div className="flex flex-wrap items-center gap-3">
-                  <Badge className="flex items-center gap-1 bg-white/10 text-white border-white/20 backdrop-blur-sm">
-                    <Calendar className="h-3 w-3" />
-                    Est. 2018
-                  </Badge>
-                  <Badge className="flex items-center gap-1 bg-white/10 text-white border-white/20 backdrop-blur-sm">
-                    <MapPin className="h-3 w-3" />
-                    Riyadh, Saudi Arabia
-                  </Badge>
-                  <Badge className="flex items-center gap-1 bg-white/10 text-white border-white/20 backdrop-blur-sm">
-                    <Award className="h-3 w-3" />
-                    CCNA Certified
-                  </Badge>
-                </div>
-                
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white" data-testid="text-hero-name">
                   Mahmoud Mohamed Saleh
                 </h1>
