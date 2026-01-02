@@ -478,7 +478,7 @@ export default function Home() {
                 </p>
                 
                 <p className="text-slate-400 text-lg max-w-lg">
-                  Electrical Engineer specializing in telecommunications, security systems, and infrastructure networking across Saudi Arabia and the Middle East.
+                  Presale Manager with 7+ years of end-to-end product lifecycle expertise spanning Electronics Design, SMT Manufacturing, and Presales Engineering across 12+ Low Current System categories in Saudi Arabia and the Middle East.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
