@@ -495,20 +495,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center mb-3">
                     <Briefcase className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div className="text-3xl font-bold text-white" data-testid="text-stat-years">7+</div>
                   <div className="text-sm text-slate-400">Years Experience</div>
-                </div>
-                <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
-                  <div className="mx-auto w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center mb-3">
-                    <Settings className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <div className="text-3xl font-bold text-white" data-testid="text-stat-projects">15+</div>
-                  <div className="text-sm text-slate-400">Projects Completed</div>
                 </div>
                 <div className="text-center p-6 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center mb-3">
