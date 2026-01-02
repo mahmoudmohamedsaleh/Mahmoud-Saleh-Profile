@@ -56,6 +56,7 @@ const experiences = [
       "Lead design, pricing, and technical strategy for large-scale Infrastructure Networking projects",
       "Oversee preparation of detailed engineering drawings and technical specifications",
       "Direct and mentor a team of supervisors and technicians",
+      "Provide technical support to Implementation Teams and Project Managers across all supervised systems",
       "Ensure 100% system uptime through expert troubleshooting protocols",
     ],
     fullDescription: [
@@ -63,6 +64,7 @@ const experiences = [
       "System Design & Documentation: Oversee the preparation of detailed engineering drawings, technical specifications, and contract documents for advanced Communication and Security systems.",
       "Technical Problem Solving: Expertly diagnose system failures and breakdowns, developing high-level professional solutions and troubleshooting protocols to ensure 100% system uptime.",
       "Multidisciplinary Coordination: Act as the primary technical bridge between different engineering disciplines to ensure seamless integration and project alignment with client requirements.",
+      "Implementation Support: Provide comprehensive technical support and guidance to Implementation Teams and Project Managers throughout all project phases, ensuring successful system deployment.",
       "Team Leadership: Direct and mentor a dedicated team of supervisors and technicians, ensuring high-quality installation, configuration, and adherence to project timelines.",
       "Quality Assurance: Monitor ongoing installations and maintenance schedules to provide proactive system monitoring and resolve potential issues before they impact project delivery.",
     ],
