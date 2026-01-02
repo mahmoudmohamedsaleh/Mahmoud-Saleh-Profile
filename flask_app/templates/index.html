@@ -248,7 +248,7 @@
                                 <h3 class="skill-title">{{ category.title }}</h3>
                             </div>
                             <div class="skill-badges">
-                                {% for skill in category.items %}
+                                {% for skill in category.skill_items %}
                                 <span class="badge {% if skill.level == 'Expert' or skill.level == 'Certified' %}badge-default{% elif skill.level == 'Advanced' %}badge-secondary{% else %}badge-outline{% endif %} skill-badge" data-testid="badge-skill-{{ skill.name|lower|replace(' ', '-') }}">
                                     {{ skill.name }}
                                 </span>

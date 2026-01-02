@@ -210,7 +210,7 @@ SKILLS = {
     "networking": {
         "title": "Networking & Systems",
         "icon": "network",
-        "items": [
+        "skill_items": [
             {"name": "CCNA", "level": "Certified"},
             {"name": "Light Current Systems", "level": "Expert"},
             {"name": "Infrastructure Networking", "level": "Expert"},
@@ -224,7 +224,7 @@ SKILLS = {
     "programming": {
         "title": "Programming",
         "icon": "code",
-        "items": [
+        "skill_items": [
             {"name": "Python", "level": "Expert"},
             {"name": "C/C++", "level": "Advanced"},
             {"name": "Embedded C", "level": "Advanced"},
@@ -236,7 +236,7 @@ SKILLS = {
     "tools": {
         "title": "Tools & Platforms",
         "icon": "wrench",
-        "items": [
+        "skill_items": [
             {"name": "ORCAD (Cadence)", "level": "Expert"},
             {"name": "Proteus", "level": "Expert"},
             {"name": "Arduino", "level": "Advanced"},
