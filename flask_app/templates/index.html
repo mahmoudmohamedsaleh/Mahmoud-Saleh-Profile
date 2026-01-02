@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile.name }} - {{ profile.title }}</title>
+    <meta name="description" content="{{ profile.hero_description }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ profile.name }} - {{ profile.title }}">
+    <meta property="og:description" content="{{ profile.hero_description }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+    <!-- Theme Script (load early to prevent flash) -->
+    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <span class="header-logo">Mahmoud Saleh</span>
+            <nav class="header-nav">
+                <a href="#about" data-testid="link-about">About</a>
+                <a href="#experience" data-testid="link-experience">Experience</a>
+                <a href="#skills" data-testid="link-skills">Skills</a>
+                <a href="#projects" data-testid="link-projects">Projects</a>
+                <a href="#contact" data-testid="link-contact">Contact</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" data-testid="button-theme-toggle">
+                <!-- Moon Icon (shown in light mode) -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+                <!-- Sun Icon (shown in dark mode) -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg" style="background-image: url('{{ url_for('static', filename='assets/professional_tech_hero_background.png') }}')"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-overlay-side"></div>
+            <div class="container hero-content">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1 class="hero-name" data-testid="text-hero-name">{{ profile.name }}</h1>
+                        <p class="hero-title" data-testid="text-hero-title">{{ profile.title }}</p>
+                        <p class="hero-description">{{ profile.hero_description }}</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" data-testid="button-download-resume">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                                Download Resume
+                            </button>
+                            <a href="#contact" class="btn btn-outline" data-testid="button-contact-me">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                </svg>
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div class="stat-value" data-testid="text-stat-years">{{ profile.stats.years_experience }}</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                            </div>
+                            <div class="stat-value" data-testid="text-stat-teams">{{ profile.stats.teams_led }}</div>
+                            <div class="stat-label">Teams Led</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-secondary">About Me</span>
+                    <h2 class="section-title">Professional Summary</h2>
+                </div>
+                <div class="card about-card">
+                    <p class="about-summary" data-testid="text-about-summary">{{ profile.summary }}</p>
+                    
+                    <div>
+                        <h3 class="systems-title">As Presale Manager, I Supervise Low Current System Solutions</h3>
+                        <div class="systems-grid">
+                            {% for system in systems %}
+                            <span class="badge badge-secondary system-badge">{{ system }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <p class="about-summary">{{ profile.summary_closing }}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-secondary">Career Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                </div>
+                <div class="timeline">
+                    {% for exp in experiences %}
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="card experience-card">
+                            <div class="card-header">
+                                <div class="experience-header">
+                                    <div>
+                                        <h3 class="experience-title" data-testid="text-job-title-{{ exp.id }}">{{ exp.title }}</h3>
+                                        <div class="experience-company">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                            </svg>
+                                            <span>{{ exp.company }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="experience-meta">
+                                        <span class="badge badge-secondary experience-badge">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                            </svg>
+                                            {{ exp.period }}
+                                        </span>
+                                        <span class="badge badge-outline experience-badge">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            {{ exp.location }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                {% if exp.systems %}
+                                <div class="experience-systems">
+                                    <h4 class="experience-systems-title">Systems I Supervise</h4>
+                                    <div class="experience-systems-grid">
+                                        {% for system in exp.systems %}
+                                        <span class="badge badge-secondary badge-sm">{{ system }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                                
+                                <ul class="highlight-list">
+                                    {% for highlight in exp.highlights %}
+                                    <li class="highlight-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <span>{{ highlight }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                
+                                <div class="full-description">
+                                    <h4 class="full-description-title">Full Responsibilities</h4>
+                                    <ul class="highlight-list">
+                                        {% for desc in exp.full_description %}
+                                        <li class="highlight-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                            </svg>
+                                            <span>{{ desc }}</span>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                
+                                <button class="btn btn-ghost expand-btn" data-testid="button-expand-{{ exp.id }}">
+                                    <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                    <svg class="chevron-up" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                                    </svg>
+                                    <span class="btn-text">Show more</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-secondary">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    {% for key, category in skills.items() %}
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="skill-card-header">
+                                <div class="skill-icon">
+                                    {% if category.icon == 'network' %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                    </svg>
+                                    {% elif category.icon == 'code' %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                    </svg>
+                                    {% elif category.icon == 'wrench' %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    {% endif %}
+                                </div>
+                                <h3 class="skill-title">{{ category.title }}</h3>
+                            </div>
+                            <div class="skill-badges">
+                                {% for skill in category.items %}
+                                <span class="badge {% if skill.level == 'Expert' or skill.level == 'Certified' %}badge-default{% elif skill.level == 'Advanced' %}badge-secondary{% else %}badge-outline{% endif %} skill-badge" data-testid="badge-skill-{{ skill.name|lower|replace(' ', '-') }}">
+                                    {{ skill.name }}
+                                </span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-secondary">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Key projects delivered as a Presale Engineer in Saudi Arabia</p>
+                </div>
+                <div class="projects-grid">
+                    {% for project in projects %}
+                    <div class="card project-card">
+                        <div class="card-header">
+                            <div class="project-header">
+                                <h3 class="project-name" data-testid="text-project-{{ project.name|lower|replace(' ', '-') }}">{{ project.name }}</h3>
+                                <span class="badge badge-outline project-type">{{ project.type }}</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="project-description">{{ project.description }}</p>
+                            <div class="project-systems">
+                                {% for system in project.systems %}
+                                <span class="badge badge-secondary badge-sm">{{ system }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-secondary">Academic Background</span>
+                    <h2 class="section-title">Education & Certifications</h2>
+                </div>
+                <div class="education-grid">
+                    <div class="card education-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="education-degree" data-testid="text-education-degree">{{ education.degree }}</h3>
+                                <p class="education-department">{{ education.department }}</p>
+                                <p class="education-university">{{ education.university }}</p>
+                                <div class="education-badges">
+                                    <span class="badge badge-secondary">{{ education.period }}</span>
+                                    <span class="badge badge-outline">GPA: {{ education.gpa }}</span>
+                                </div>
+                                <div class="graduation-project">
+                                    <p class="graduation-project-title">Graduation Project</p>
+                                    <p class="graduation-project-desc">{{ education.graduation_project }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card education-card">
+                        <div class="education-header">
+                            <div class="education-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="education-degree">Certifications & Training</h3>
+                                <ul class="certifications-list">
+                                    {% for cert in certifications %}
+                                    <li class="certification-item">
+                                        {% if cert.icon == 'shield' %}
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        </svg>
+                                        {% else %}
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                        </svg>
+                                        {% endif %}
+                                        <span>{{ cert.name }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card languages-card">
+                    <div class="languages-header">
+                        <div class="education-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="languages-title">Languages</h3>
+                            <div class="languages-list">
+                                {% for lang in languages %}
+                                <div class="language-item">
+                                    <span class="badge {% if lang.variant == 'primary' %}badge-default{% else %}badge-secondary{% endif %}">{{ lang.name }}</span>
+                                    <span class="language-level">{{ lang.level }}</span>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge badge-secondary">Get in Touch</span>
+                    <h2 class="section-title">Contact Information</h2>
+                    <p class="section-subtitle">Let's work together on your next project</p>
+                </div>
+                <div class="card contact-card">
+                    <div class="contact-grid">
+                        <a href="mailto:{{ profile.contact.email }}" class="contact-item" data-testid="link-email">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">{{ profile.contact.email }}</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:{{ profile.contact.phone_link }}" class="contact-item" data-testid="link-phone">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-value">{{ profile.contact.phone }}</p>
+                            </div>
+                        </a>
+
+                        <a href="{{ profile.contact.whatsapp_link }}" target="_blank" rel="noopener noreferrer" class="contact-item" data-testid="link-whatsapp">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="contact-label">WhatsApp</p>
+                                <p class="contact-value">{{ profile.contact.whatsapp }}</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="location-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <div>
+                            <p class="contact-label">Location</p>
+                            <p class="contact-value">{{ profile.contact.location }}</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <a href="mailto:{{ profile.contact.email }}" class="btn btn-primary" data-testid="button-send-message">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Send Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">{{ profile.name }} - Electrical Engineer</p>
+            <p class="footer-location">Riyadh, Saudi Arabia</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
