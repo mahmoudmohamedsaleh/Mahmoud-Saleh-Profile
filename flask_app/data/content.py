@@ -75,7 +75,6 @@ EXPERIENCES = [
         "highlights": [
             "Provide Solution, designing, pricing for Infrastructure Networking projects",
             "Prepare efficient designs of Communication and Security Systems",
-            "Handle and lead a team of supervisors and technicians",
             "Coordinate between all disciplines for project success",
         ],
         "full_description": [
@@ -83,7 +82,6 @@ EXPERIENCES = [
             "Prepares and assists with the efficient and effective design of Communication and Security Systems, prepares drawings, contract documents",
             "Responsible for the coordination between all disciplines",
             "Diagnosing Systems Failures, Breakdown Problems, and Plan Professional Solutions",
-            "Handle and lead a team of supervisors and technicians",
             "Provide the proper implementation of the Low current Systems",
         ],
     },
