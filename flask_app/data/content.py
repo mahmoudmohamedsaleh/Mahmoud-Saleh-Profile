@@ -208,7 +208,7 @@ EXPERIENCES = [
 
 SKILLS = {
     "certifications": {
-        "title": "Certifications & Knowledge",
+        "title": "Knowledge",
         "icon": "shield",
         "skill_items": [
             {"name": "CCNA Knowledge", "level": "Certified"},
