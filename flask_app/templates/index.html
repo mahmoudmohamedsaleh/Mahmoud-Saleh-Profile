@@ -272,18 +272,10 @@
                 <div class="projects-grid">
                     {% for project in projects %}
                     <div class="card project-card">
-                        <div class="card-header">
+                        <div class="card-content">
                             <div class="project-header">
                                 <h3 class="project-name" data-testid="text-project-{{ project.name|lower|replace(' ', '-') }}">{{ project.name }}</h3>
                                 <span class="badge badge-outline project-type">{{ project.type }}</span>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <p class="project-description">{{ project.description }}</p>
-                            <div class="project-systems">
-                                {% for system in project.systems %}
-                                <span class="badge badge-secondary badge-sm">{{ system }}</span>
-                                {% endfor %}
                             </div>
                         </div>
                     </div>

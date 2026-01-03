@@ -247,36 +247,25 @@ SKILLS = {
 }
 
 PROJECTS = [
-    {
-        "name": "Royal Commission School",
-        "type": "Education Sector",
-        "description": "Complete Low Current Systems implementation for educational facility",
-        "systems": ["CCTV", "Access Control", "PA System", "Networking"],
-    },
-    {
-        "name": "Education And Training Evaluation Commission",
-        "type": "Government",
-        "description": "Infrastructure networking and security systems for evaluation commission",
-        "systems": ["Infrastructure", "Security", "Communication"],
-    },
-    {
-        "name": "Tiba University",
-        "type": "Higher Education",
-        "description": "Comprehensive technology solutions for university campus",
-        "systems": ["ICT", "IP-CCTV", "Audio Visual", "Networking"],
-    },
-    {
-        "name": "Qiddia Water Supply Construction",
-        "type": "Industrial",
-        "description": "Water supply facility technology infrastructure",
-        "systems": ["SCADA", "Building Management", "Communication"],
-    },
-    {
-        "name": "Schools Ministry of Education",
-        "type": "Government Education",
-        "description": "Multiple school projects for Ministry of Education",
-        "systems": ["Low Current", "Security", "PA System"],
-    },
+    {"name": "King Faisal Museum", "type": "Museum"},
+    {"name": "King Faisal Schools", "type": "Education"},
+    {"name": "King Faisal Office", "type": "Commercial"},
+    {"name": "Royal Commission Schools", "type": "Education"},
+    {"name": "Qalam Schools", "type": "Education"},
+    {"name": "Imtiaz Schools", "type": "Education"},
+    {"name": "Premium Private Schools", "type": "Education"},
+    {"name": "King Sultan University", "type": "Higher Education"},
+    {"name": "King Saud University", "type": "Higher Education"},
+    {"name": "Alahmadi Hospital", "type": "Healthcare"},
+    {"name": "Suliman Alhabib Hospital", "type": "Healthcare"},
+    {"name": "Suliman Alhabib Medical Center", "type": "Healthcare"},
+    {"name": "King Faisal Specialist Hospital", "type": "Healthcare"},
+    {"name": "Hayat Hotel", "type": "Hospitality"},
+    {"name": "Sheraton Hotel", "type": "Hospitality"},
+    {"name": "Soho Square", "type": "Commercial"},
+    {"name": "Boudle Hotel", "type": "Hospitality"},
+    {"name": "Novotel Hotel", "type": "Hospitality"},
+    {"name": "Asser Water Treatment Project", "type": "Infrastructure"},
 ]
 
 EDUCATION = {
