@@ -43,6 +43,7 @@ EXPERIENCES = [
         "period": "Mar 2025 - Present",
         "location": "Riyadh, Saudi Arabia",
         "systems": SYSTEMS,
+        "systems_label": "Systems I Supervise",
         "highlights": [
             "Lead design, pricing, and technical strategy for large-scale Infrastructure Networking projects",
             "Oversee preparation of detailed engineering drawings and technical specifications",
@@ -72,6 +73,7 @@ EXPERIENCES = [
         "period": "Jun 2024 - Mar 2025",
         "location": "Riyadh, Saudi Arabia",
         "systems": ["ICT", "Fire Alarm", "IP-CCTV", "Access Control", "Parking Guidance System", "IPTV", "SMATV", "BMS", "Clock System"],
+        "systems_label": "Systems I Work As A Presale Engineer",
         "highlights": [
             "Provide Solution, designing, pricing for Infrastructure Networking projects",
             "Prepare efficient designs of Communication and Security Systems",

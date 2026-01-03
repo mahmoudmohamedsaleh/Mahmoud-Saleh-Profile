@@ -166,7 +166,7 @@
                             <div class="card-content">
                                 {% if exp.systems %}
                                 <div class="experience-systems">
-                                    <h4 class="experience-systems-title">Systems I Supervise</h4>
+                                    <h4 class="experience-systems-title">{{ exp.systems_label if exp.systems_label else 'Systems I Supervise' }}</h4>
                                     <div class="experience-systems-grid">
                                         {% for system in exp.systems %}
                                         <span class="badge badge-secondary badge-sm">{{ system }}</span>
