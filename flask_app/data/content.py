@@ -69,7 +69,7 @@ EXPERIENCES = [
         "id": 2,
         "title": "Presale Engineer Low Current Systems",
         "company": "Eshraq Al-Jazeera Technology Co.",
-        "period": "Mar 2024 - Present",
+        "period": "Jun 2024 - Mar 2025",
         "location": "Riyadh, Saudi Arabia",
         "systems": None,
         "highlights": [
