@@ -1,5 +1,34 @@
 // Main JavaScript for Portfolio
 document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Menu Toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+  const menuIcon = mobileMenuBtn ? mobileMenuBtn.querySelector('.menu-icon') : null;
+  const closeIcon = mobileMenuBtn ? mobileMenuBtn.querySelector('.close-icon') : null;
+
+  if (mobileMenuBtn && mobileNav) {
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileNav.classList.toggle('active');
+      if (mobileNav.classList.contains('active')) {
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+      } else {
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+      }
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileNavLinks = mobileNav.querySelectorAll('a');
+    mobileNavLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+      });
+    });
+  }
+
   // Experience Card Expand/Collapse
   const expandButtons = document.querySelectorAll('.expand-btn');
   
