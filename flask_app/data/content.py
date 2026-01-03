@@ -207,41 +207,57 @@ EXPERIENCES = [
 ]
 
 SKILLS = {
-    "networking": {
-        "title": "Networking & Systems",
-        "icon": "network",
+    "certifications": {
+        "title": "Certifications & Knowledge",
+        "icon": "shield",
         "skill_items": [
-            {"name": "CCNA", "level": "Certified"},
-            {"name": "Light Current Systems", "level": "Expert"},
-            {"name": "Infrastructure Networking", "level": "Expert"},
-            {"name": "IP-CCTV", "level": "Expert"},
-            {"name": "Access Control", "level": "Expert"},
-            {"name": "Fire Alarm Systems", "level": "Advanced"},
-            {"name": "Public Address", "level": "Advanced"},
-            {"name": "Building Management", "level": "Advanced"},
+            {"name": "CCNA Knowledge", "level": "Certified"},
+            {"name": "HCIA Knowledge", "level": "Certified"},
+            {"name": "HCSA Knowledge", "level": "Certified"},
+            {"name": "HCSP Knowledge", "level": "Certified"},
+            {"name": "IP-Video System Design Tool", "level": "Advanced"},
+            {"name": "Light Current System Diploma", "level": "Certified"},
+            {"name": "Embedded System Diploma", "level": "Certified"},
+        ],
+    },
+    "data_engineering": {
+        "title": "Data Engineering",
+        "icon": "database",
+        "skill_items": [
+            {"name": "PostgreSQL", "level": "Advanced"},
+            {"name": "Python For Data Engineering", "level": "Advanced"},
         ],
     },
     "programming": {
-        "title": "Programming",
+        "title": "Programming Languages",
         "icon": "code",
         "skill_items": [
-            {"name": "Python", "level": "Expert"},
-            {"name": "C/C++", "level": "Advanced"},
+            {"name": "C", "level": "Advanced"},
             {"name": "Embedded C", "level": "Advanced"},
-            {"name": "Django", "level": "Intermediate"},
-            {"name": "Tkinter", "level": "Advanced"},
-            {"name": "PostgreSQL", "level": "Intermediate"},
+            {"name": "C++", "level": "Advanced"},
+            {"name": "Python", "level": "Expert"},
+            {"name": "Tkinter (Desktop App)", "level": "Advanced"},
+            {"name": "Django (Web App)", "level": "Advanced"},
+            {"name": "Flask (Web App)", "level": "Advanced"},
+            {"name": "Raspberry Pi Control", "level": "Advanced"},
+            {"name": "Arduino Control", "level": "Advanced"},
         ],
     },
-    "tools": {
-        "title": "Tools & Platforms",
+    "protocols": {
+        "title": "Communication Protocols",
+        "icon": "cpu",
+        "skill_items": [
+            {"name": "UART", "level": "Advanced"},
+            {"name": "SPI", "level": "Advanced"},
+            {"name": "I2C", "level": "Advanced"},
+        ],
+    },
+    "circuit_design": {
+        "title": "Discrete Analog Circuit Design",
         "icon": "wrench",
         "skill_items": [
             {"name": "ORCAD (Cadence)", "level": "Expert"},
             {"name": "Proteus", "level": "Expert"},
-            {"name": "Arduino", "level": "Advanced"},
-            {"name": "Raspberry Pi", "level": "Advanced"},
-            {"name": "Communication Protocols", "level": "Advanced"},
         ],
     },
 }
